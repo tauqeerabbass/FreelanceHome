@@ -29,7 +29,7 @@ const products = [
     usdPrice: "$560",
     originalUsd: "$700",
   },
-]
+];
 
 const ProductShowcase = () => {
   return (
@@ -37,41 +37,52 @@ const ProductShowcase = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center bg-blue-500 text-white px-[42px] py-2 rounded-full w-[170px] h-[33px] font-medium mb-6 font-inter text-[17.72px] leading-[25.2px] tracking-normal">
             For Buyers
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Shop Smartphones, Laptops & More –</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-red-600">Sale Ends Soon!</h3>
+          <div className="flex flex-col items-center text-center mb-8">
+            <h2 className="w-[709px] h-[93px] font-inter text-[39.05px] leading-[50.4px] -tracking-[2px] font-bold text-gray-900 -mt-3">
+              Shop Smartphones, Laptops & More –
+            </h2>
+            <h3 className="w-[709px] h-[93px] font-inter text-[39.05px] leading-[50.4px] -tracking-[2px] font-bold text-red-600 -mt-10">
+              Sale Ends Soon!
+            </h3>
+          </div>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {products.map((product) => (
-            <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+            <div
+              key={product.id}
+              className="max-w-[506px] w-full bg-white border border-[#e0e0e0] rounded-[20px] shadow-md overflow-hidden flex flex-col mx-auto"
+            >
               {/* Product Image */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
+              <div className="w-full h-[277px] overflow-hidden">
                 <img
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[277px] object-cover rounded-t-[30px] top-[16px] left-[15px]"
                 />
               </div>
 
               {/* Product Info */}
-              <div className="p-6">
-                <h4 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h4>
+              <div className="p-5 flex flex-col gap-3 flex-1 w-[536px]">
+                <h4 className=" text-[#000000] font-medium font-poppins text-[36px] leading-[34px] tracking-normal">
+                  {product.name}
+                </h4>
 
                 {/* Badges */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {product.badges.map((badge, index) => (
                     <span
                       key={index}
-                      className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      className={`px-3 py-2 text-sm rounded-lg items-center text-center font-medium ${
                         badge === "New"
-                          ? "bg-blue-100 text-blue-800"
+                          ? "bg-gray-100 text-[#0F3D3E99] text-opacity-65 border border-[#00000026] border-opacity-15 w-[93px] h-[42px] left-[27px]"
                           : badge === "Best Selling"
-                            ? "bg-green-100 text-green-800"
-                            : "bg-gray-100 text-gray-800"
+                          ? "bg-gray-100 text-[#0F3D3E99] text-opacity-65 border border-[#00000026] border-opacity-15 w-[126px] h-[42px] left-[27px] font-poppins font-normal text-[18px] leading-[19.5px] tracking-normal"
+                          : "bg-gray-100 text-[#0F3D3E99] text-opacity-65 border border-[#00000026] border-opacity-15 w-[126px] h-[42px] left-[27px] font-poppins font-normal text-[18px] leading-[19.5px] tracking-normal"
                       }`}
                     >
                       {badge}
@@ -80,19 +91,27 @@ const ProductShowcase = () => {
                 </div>
 
                 {/* Pricing */}
-                <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-red-500 line-through text-lg">{product.originalPrice}</span>
-                    <span className="text-green-600 font-bold text-2xl">{product.salePrice}</span>
-                  </div>
+                <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-red-500 line-through">{product.originalUsd}</span>
-                    <span className="text-gray-900 font-semibold text-xl">{product.usdPrice}</span>
+                    <span className="text-[#FF00049C] line-through font-medium font-poppins text-[24px] leading-[13px] tracking-normal">
+                      {product.originalPrice}
+                    </span>
+                    <span className="text-[#15803D] font-medium font-poppins text-[32px] leading-[13px] tracking-normal">
+                      {product.salePrice}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 mt-8">
+                    <span className="text-[#FF00049C] line-through font-medium font-poppins text-[24px] leading-[13px] tracking-normal">
+                      {product.originalUsd}
+                    </span>
+                    <span className="text-[#15803D] font-medium font-poppins text-[32px] leading-[13px] tracking-normal">
+                      {product.usdPrice}
+                    </span>
                   </div>
                 </div>
 
                 {/* Add to Cart Button */}
-                <button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition-colors">
+                <button className="relative z-50 bottom-10 left-40 w-[193px] h-[46px] bg-[#15803D] hover:bg-[#15803D] text-white font-poppins font-semibold text-[20px] leading-[26px] tracking-normal py-2 px-4 rounded-2xl transition">
                   Add to Cart
                 </button>
               </div>
@@ -101,7 +120,7 @@ const ProductShowcase = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProductShowcase
+export default ProductShowcase;

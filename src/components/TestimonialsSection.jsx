@@ -9,7 +9,7 @@ const testimonials = [
     quote: "Hired 5 IT specialists in a week!",
     company: "Conakry Companies",
     type: "Local Startup",
-    avatar: {asset15},
+    avatar: asset15,
     quoteColor: "text-red-500",
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
     quote: "Hired 5 IT specialists in a week!",
     company: "Conakry Companies",
     type: "Local Startup",
-    avatar: {asset15},
+    avatar: asset15,
     quoteColor: "text-yellow-500",
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     quote: "Hired 5 IT specialists in a week!",
     company: "Conakry Companies",
     type: "Local Startup",
-    avatar: {asset15},
+    avatar: asset15,
     quoteColor: "text-green-500",
   },
   {
@@ -33,7 +33,7 @@ const testimonials = [
     quote: "Amazing platform for finding talent!",
     company: "Tech Solutions",
     type: "Enterprise",
-    avatar: {asset15},
+    avatar: asset15,
     quoteColor: "text-blue-500",
   },
 ]
@@ -57,10 +57,10 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="w-[300px] h-[33px] font-inter text-[17.72px] leading-[25.2px] tracking-normal inline-block bg-[#3B82F6] text-white px-6 py-1 rounded-full text-sm font-medium mb-8">
             Our Testimonials
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="absolute left-[770px] font-bold font-inter text-[39.54px] leading-[50.4px] tracking-normal text-[#161C2D]">
             What our clients say
             <br />
             about solutions
@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
               <div className={`text-6xl font-bold mb-6 ${testimonial.quoteColor}`}>{"''"}</div>
 
               {/* Quote Text */}
-              <p className="text-xl font-semibold text-gray-900 mb-8">{testimonial.quote}</p>
+              <p className="font-medium font-inter text-[19.38px] leading-[34px] tracking-normal text-[#161C2D] mb-8">{testimonial.quote}</p>
 
               {/* Avatar */}
               <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
@@ -87,8 +87,8 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Company Info */}
-              <h4 className="text-lg font-bold text-gray-900 mb-1">{testimonial.company}</h4>
-              <p className="text-gray-600">{testimonial.type}</p>
+              <h4 className="font-bold font-inter text-[17.58px] leading-[21.6px] tracking-normal text-[#161C2D] mb-1">{testimonial.company}</h4>
+              <p className="font-medium font-inter text-[14.65px] leading-[15px] tracking-normal text-[#6E727D]">{testimonial.type}</p>
             </div>
           ))}
         </div>

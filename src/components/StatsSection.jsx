@@ -23,7 +23,7 @@ const StatsSection = () => {
   }
 
   return (
-    <section className="bg-gradient-to-br from-blue-500 to-blue-600 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#3B82F6] to-blue-600 py-20 relative overflow-hidden w-[1920px] h-[697.59px]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
@@ -35,14 +35,24 @@ const StatsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Professional Image with UI Overlays */}
           <div className="relative flex justify-center">
-            {/* Main Professional Image - Fixed dimensions */}
-            <div className="relative z-10">
+            {/* Main Professional Image - Flipped horizontally */}
+            <div
+              className="absolute z-20"
+              style={{
+                top: "-100px", // adjust as you like
+                left: "70px", // adjust as you like
+              }}
+            >
               {!imageErrors.main ? (
                 <img
                   src="/assets/asset17.jpg"
                   alt="Professional working"
                   className="rounded-2xl shadow-2xl object-cover"
-                  style={{ width: "345px", height: "319px" }}
+                  style={{
+                    width: "345px",
+                    height: "319px",
+                    transform: "scaleX(-1)", // flip horizontally
+                  }}
                   onError={handleMainImageError}
                 />
               ) : (
@@ -77,13 +87,19 @@ const StatsSection = () => {
               </div>
             </div>
 
-            {/* Floating UI Image */}
-            <div className="absolute -top-4 -right-4 z-20">
+            {/* Floating UI Image - positioned freely for your choice */}
+            <div
+              className="absolute z-20"
+              style={{
+                top: "-170px", // adjust as you like
+                right: "90px", // adjust as you like
+              }}
+            >
               {!imageErrors.floating ? (
                 <img
                   src="/assets/asset18.png"
                   alt="Floating UI"
-                  className="rounded-2xl shadow-lg w-[150px]"
+                  className="rounded-2xl shadow-lg w-[153px] h-[186px]"
                   onError={handleFloatingImageError}
                 />
               ) : (
@@ -93,13 +109,19 @@ const StatsSection = () => {
               )}
             </div>
 
-            {/* Document Preview Image */}
-            <div className="absolute top-1/2 -left-8 z-20 transform -translate-y-1/2">
+            {/* Document Preview Image - positioned freely for your choice */}
+            <div
+              className="absolute z-20"
+              style={{
+                top: "120px", // adjust as you like
+                left: "30px", // adjust as you like
+              }}
+            >
               {!imageErrors.document ? (
                 <img
                   src="/assets/asset19.png"
                   alt="Document Preview"
-                  className="rounded-lg shadow-lg w-[120px]"
+                  className="rounded-lg shadow-lg w-[137px] h-[136px]"
                   onError={handleDocumentImageError}
                 />
               ) : (
@@ -113,9 +135,9 @@ const StatsSection = () => {
           {/* Right Side - Statistics in 2x2 Grid */}
           <div className="text-white">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Daily Active Users - Top Left */}
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
+              {/* Daily Active Users */}
+              <div className="space-y-3 w-[222px] h-[190.8px]">
+                <div className="flex items-center space-x-3 mt-[100px]">
                   <Activity className="w-8 h-8 text-white" />
                   <div className="flex -space-x-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white overflow-hidden">
@@ -131,14 +153,14 @@ const StatsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">96327+</div>
-                  <div className="text-blue-100">Daily Active Users</div>
+                  <div className="font-medium font-inter text-[36.59px] leading-[42px] tracking-normal">96327+</div>
+                  <div className="font-medium font-inter text-[15.8px] leading-[23.8px] tracking-normal text-[#FFFFFF]">Daily Active Users</div>
                 </div>
               </div>
 
-              {/* Trusted by NGOs - Top Right */}
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
+              {/* Trusted by NGOs */}
+              <div className="space-y-3 w-[222px] h-[190.8px]">
+                <div className="flex items-center space-x-3  mt-[100px]">
                   <Award className="w-8 h-8 text-white" />
                   <div className="flex -space-x-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white overflow-hidden">
@@ -154,14 +176,14 @@ const StatsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">20+</div>
-                  <div className="text-blue-100">Trusted by 20+ NGOs in Guinea for tech and training solutions.</div>
+                  <div className="font-medium font-inter text-[37.73px] leading-[42px] tracking-normal">20+</div>
+                  <div className="font-medium font-inter text-[15.8px] leading-[23.8px] tracking-normal text-[#FFFFFF]">Trusted by 20+ NGOs in Guinea for tech and training solutions.</div>
                 </div>
               </div>
 
-              {/* Freelancers - Bottom Left */}
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
+              {/* Freelancers */}
+              <div className="space-y-3 w-[222px] h-[190.8px]">
+                <div className="flex items-center space-x-3 mt-[100px]">
                   <Users className="w-8 h-8 text-white" />
                   <div className="flex -space-x-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white overflow-hidden">
@@ -177,21 +199,18 @@ const StatsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">100+</div>
-                  <div className="text-blue-100">Freelancers in Conakry</div>
+                  <div className="font-medium font-inter text-[36.91px] leading-[42px] tracking-normal">100+</div>
+                  <div className="font-medium font-inter text-[16.07px] leading-[23.8px] tracking-normal text-[#FFFFFF]">Freelancers in Conakry</div>
                 </div>
               </div>
 
-              {/* Security Badge - Bottom Right (No chat bubble) */}
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
+              {/* Security Badge */}
+              <div className="space-y-3 w-[222px] h-[190.8px]">
+                <div className="flex items-center space-x-3 mt-[100px]">
                   <Shield className="w-8 h-8 text-white" />
-                  {/* No user avatars for this section */}
                 </div>
                 <div>
-                  <div className="text-2xl font-bold">Powered By</div>
-                  <div className="text-3xl font-bold">TLS1.3</div>
-                  <div className="text-blue-100 text-sm">Enterprise-grade security</div>
+                  <div className="font-medium font-inter text-[37.73px] leading-[42px] tracking-normal">Powered By TLS1.3</div>
                 </div>
               </div>
             </div>

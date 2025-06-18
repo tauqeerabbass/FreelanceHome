@@ -1,6 +1,6 @@
 const TrainingSection = () => {
   return (
-    <section className="relative bg-gray-900 py-20 overflow-hidden">
+    <section className="relative bg-gray-900 py-20 overflow-hidden w-[1920px] h-[510px]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
@@ -16,19 +16,20 @@ const TrainingSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white">
-            <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <div className="w-[361px] h-[33px] ml-[400px] inline-block bg-[#3B82F6] text-white py-1 rounded-full mb-8 font-medium text-center items-center font-inter text-[17.72px] leading-[25.2px] tracking-normal">
               For Freelancers & Companies
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="w-[624px] h-[120px] -ml-[80px] font-bold font-inter text-[39.05px] leading-tight -tracking-[2px] mb-6">
               Grow Your Skills or Customize Training for Your Team
             </h2>
 
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Request custom training for your company or new courses as a freelancer!
+            <p className="w-[624px] h-[120px] -ml-[80px] -mt-7 text-[#BFBFBF] font-medium font-inter text-[24px] leading-[30.6px] tracking-normal mb-8">
+              Request custom training for your company or new courses as a
+              freelancer!
             </p>
 
-            <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+            <button className="absolute bottom-0 -left-[50px] bg-[#15803D] hover:bg-[#15803D] w-[310px] h-[67px] text-white px-8 py-4 rounded-3xl font-semibold font-poppins text-[20px] leading-[26px] tracking-normal transition-colors">
               START LEARNING NOW →
             </button>
           </div>
@@ -55,8 +56,12 @@ const TrainingSection = () => {
 
                   {/* Chat Content */}
                   <div className="flex-1">
-                    <div className="text-gray-900 font-medium">Training Available</div>
-                    <div className="text-gray-600 text-sm">Custom courses ready</div>
+                    <div className="text-gray-900 font-medium">
+                      Training Available
+                    </div>
+                    <div className="text-gray-600 text-sm">
+                      Custom courses ready
+                    </div>
                   </div>
                 </div>
               </div>
@@ -73,7 +78,7 @@ const TrainingSection = () => {
         <div className="w-full h-full border-2 border-white rounded-full"></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TrainingSection
+export default TrainingSection;
