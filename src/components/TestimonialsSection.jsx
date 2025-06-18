@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import asset15 from "../../assets/asset15.png";
+import asset15 from "/assets/asset15.png";
 
 const testimonials = [
   {

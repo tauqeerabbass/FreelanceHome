@@ -1,14 +1,14 @@
-import asset2 from "../../assets/asset2.png";
-import asset3 from "../../assets/asset3.png";
-import asset4 from "../../assets/asset4.png";
-import asset20 from "../../assets/asset20.jpg";
+import asset2 from "/assets/asset2.png";
+import asset3 from "/assets/asset3.png";
+import asset4 from "/assets/asset4.png";
+import asset20 from "/assets/asset20.jpg";
 
 const PromotionSection = () => {
   return (
     <section
-      className="relative overflow-hidden w-[1260px] h-[442.97px]"
+      className="relative overflow-hidden"
       style={{
-        width: "1260px",
+        width: "1920px",
         height: "442.97px",
         backgroundImage: `url(${asset20})`,
         backgroundSize: "cover",
@@ -42,15 +42,15 @@ const PromotionSection = () => {
           </div>
 
           {/* Center - Content */}
-          <div className="text-center text-white">
-            <p className="relative font-inter text-[17.3px] leading-[25.2px] tracking-normal top-[120px] left-[878px]">
+          <div className="text-center text-white content-center">
+            <p className="relative font-inter text-[17.3px] leading-[25.2px] tracking-normal mt-[120px] ml-[250px] w-[164.68px] h-[18px]">
               Ad
             </p>
-            <h2 className="relative font-bold font-inter text-[40.2px] leading-[50.4px] tracking-[-2px] w-[513.9px] h-[92.39px] top-[4px] left-[28.14px]">
+            <h2 className="relative font-bold font-inter text-[40.2px] leading-[50.4px] tracking-[-2px] w-[570px] h-[100.78px] ml-[50px] mt-[15px]">
               Get 20% Off Smartphones &<br />
               Rentals – Visit Our Shop!
             </h2>
-            <button className="relativew-[301px] h-[55px] font-inter text-[14.77px] leading-[21px] tracking-normal font-bold bg-transparent border-2 border-opacity-15 text-white rounded-full transition-colors  top-[272px] left-[784px]">
+            <button className="relative w-[301px] h-[55px] font-inter text-[14.77px] leading-[21px] tracking-normal font-bold bg-transparent border-2 border-opacity-5 text-white rounded-full transition-colors mt-[30px] ml-[30px]">
               Explore the Platform Now →
             </button>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import circle from "/assets/circle.png";
 
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -36,43 +37,41 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-gray-50 py-20 overflow-hidden">
+    <section className="relative bg-gray-50 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-30 left-20 w-20 h-20 bg-pink-200 rounded-full opacity-60"></div>
       <div className="absolute top-32 right-32 w-4 h-4 bg-purple-500 rounded-full"></div>
       <div className="absolute bottom-40 left-10 w-3 h-3 bg-blue-400 rounded-full"></div>
       <div className="absolute bottom-40 right-20 w-4 h-4 bg-orange-400 rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+      <div className="max-w-7xl mx-auto text-center relative">
         {/* Save 20% Badge */}
-        <div className="inline-flex items-center space-x-4 mb-8">
-          <div className="bg-[#BEEACF] text-[#15803D] px-4 py-2 rounded-full text-sm font-medium font-inter text-[16.73px] leading-[23.4px] tracking-normal">
+        <div className="inline-flex items-center">
+          <div className="bg-[#BEEACF] text-[#15803D] w-[108.25px] h-[33.39px] mt-[95.06px] ml-[250px] rounded-full font-medium font-inter text-[16.73px] leading-[23.4px] tracking-normal content-center">
             Save 20%
           </div>
-          <span className="text-[#15803D] font-inter text-[16.88px] leading-[23.4px] tracking-normal font-medium">
+          <span className="text-[#15803D] font-inter text-[16.88px] leading-[23.4px] tracking-normal font-medium w-[133.62px] h-[18px] mt-[90.06px] ">
             Faster solutions
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 font-inter text-[85px] leading-[97.75px] tracking-[-1px]">
+        <h1 className="font-bold text-[#161C2D] font-inter text-[85px] leading-[97.75px] -tracking-[1px] w-[1350px] ml-[90px] mt-[25px]">
           Shop. Book.{" "}
           <span className="relative inline-block">
-            <span className="text-[#3B82F6] font-inter text-[73.71px] leading-[97.75px] tracking-[-1px]">
+            <span className="text-[#3B82F6] font-inter text-[73.71px] leading-[97.75px] -tracking-[1px]">
+              <img
+                src={circle}
+                className="absolute z-50 h-[130px] w-[229px] -top-4 object-cover"
+              />
               Hire.
             </span>
             {/* Circular animation around "Hire" */}
-            <div className="absolute inset-0 -m-4">
-              <div className="w-full h-full border-2 border-blue-400 rounded-full animate-pulse opacity-60"></div>
-            </div>
-            <div className="absolute inset-0 -m-6">
-              <div className="w-full h-full border border-blue-300 rounded-full animate-ping opacity-40 font-inter text-[79.02px] leading-[97.75px] tracking-[-1px] font-bold"></div>
-            </div>
           </span>{" "}
           Rent. Transform.
         </h1>
 
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+        <h2 className="text-[#161C2D] font-bold w-[1482px] h-[195px] font-inter text-[79.02px] leading-[97.75px] -tracking-[1px]">
           - Your Tech Partner in{" "}
           <span className="bg-gradient-to-r from-[#FF0004] via-[#FFBB00] to-[#15803D] bg-clip-text text-transparent font-bold">
             Guinea
@@ -80,35 +79,35 @@ const HeroSection = () => {
         </h2>
 
         {/* Limited Time Offer */}
-        <p className="text-[#6E727D] mb-8 font-inter text-[24px] leading-[30.6px] tracking-normal">
+        <p className="text-[#6E727D] font-inter text-[24px] leading-[30.6px] tracking-normal w-[633px] h-[37px] ml-[470px] -mt-[90px]">
           Limited-Time Offer: Save 20% Until May 16, 2025!
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
+        <div className="flex flex-wrap justify-evenly w-[1080px] h-[65px] mt-[50px] ml-[200px]">
+          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
             Shop Smartphones →
           </button>
-          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
+          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
             Hire Freelancers →
           </button>
-          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
+          <button className="w-[211.45px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
             Explore Tech Services →
           </button>
-          <button className="w-[166px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
+          <button className="w-[166px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
             Rent Devices →
           </button>
-          <button className="w-[166px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white px-6 py-3 rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
+          <button className="w-[166px] h-[55px] bg-[#15803D] hover:bg-green-700 text-white rounded-full transition-colors font-inter font-bold text-[14.41px] leading-[21px] tracking-normal">
             Start Training →
           </button>
         </div>
 
         {/* Countdown Timer */}
         <div className="text-center">
-          <h3 className="font-bold text-[#161C2D] mb-2 font-inter text-[40px] leading-[97.75px] tracking-[-1px]">
+          <h3 className="font-bold text-[#161C2D] font-inter text-[40px] leading-[97.75px] -tracking-[1px] w-[1482px] h-[85px]">
             {timeLeft.days} day, {timeLeft.hours} hours remaining
           </h3>
-          <p className="text-[#6E727D] font-inter text-[24px] leading-[30.6px] tracking-normal">
+          <p className="text-[#6E727D] font-inter text-[24px] leading-[30.6px] tracking-normal w-[719px] h-[37px] ml-[350px]">
             from 05:55 PM CEST, May 14, 2025, to midnight May 16, 2025
           </p>
         </div>
