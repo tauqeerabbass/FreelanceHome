@@ -6,19 +6,21 @@ import ProductShowcase from "./components/ProductShowcase"
 import TrainingSection from "./components/TrainingSection"
 import TestimonialsSection from "./components/TestimonialsSection"
 import StatsSection from "./components/StatsSection"
+import ShopPage from "./components/ShopPage"
 import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <HeroSection />
+      <ShopPage/>
+      {/* <HeroSection />
       <PromotionSection />
       <ServicesSection />
       <ProductShowcase />
       <TrainingSection />
       <TestimonialsSection />
-      <StatsSection />
+      <StatsSection /> */}
       <Footer />
     </div>
   )
