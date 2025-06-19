@@ -8,12 +8,15 @@ import TestimonialsSection from "./components/TestimonialsSection"
 import StatsSection from "./components/StatsSection"
 import ShopPage from "./components/ShopPage"
 import Footer from "./components/Footer"
+import ProductDescription from "./components/ProductDescription"
+import Cart from "./components/Cart"
+import Invoice from "./components/Invoice"
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <ShopPage/>
+      <Invoice />
       {/* <HeroSection />
       <PromotionSection />
       <ServicesSection />
