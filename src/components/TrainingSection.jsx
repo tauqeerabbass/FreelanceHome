@@ -74,8 +74,15 @@ const TrainingSection = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-10 right-10 w-32 h-32 opacity-20">
+      <div className="absolute bottom-10 top-[180px] left-[1458px] w-[150px] h-[150px] opacity-20">
         <div className="w-full h-full border-2 border-white rounded-full"></div>
+        
+
+      <img
+        src="/assets/play.png"
+        alt=""
+        className="ml-[70px] -mt-[90px] w-[17.5px] h-[20.02px]"
+      />
       </div>
     </section>
   );

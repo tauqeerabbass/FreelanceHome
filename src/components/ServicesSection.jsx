@@ -49,7 +49,7 @@ const services = [
     description:
       "Implement, optimize, and customize SAP/ERP systems for your business.",
     buttonText: "Explore ERP Services",
-    color: "text-red-500",
+    color: "text-[#FF0004]",
   },
   {
     image: "/assets/asset12.png",
@@ -57,7 +57,7 @@ const services = [
     description:
       "Reliable IT support for hardware, software, and network issues.",
     buttonText: "Get IT Support",
-    color: "text-red-500",
+    color: "text-[#FF0004]",
   },
   {
     image: "/assets/asset8.png",
@@ -65,7 +65,7 @@ const services = [
     description:
       "Seamlessly integrate IT solutions to enhance business operations.",
     buttonText: "Integrate Now",
-    color: "text-yellow-500",
+    color: "text-[#FFBB00]",
   },
   {
     image: "/assets/asset11.png",
@@ -73,7 +73,7 @@ const services = [
     description:
       "Outsource IT tasks to our expert team for efficiency and cost savings.",
     buttonText: "Outsource Now",
-    color: "text-yellow-500",
+    color: "text-[#FFBB00]",
   },
   {
     image: "/assets/asset6.png",
@@ -82,7 +82,7 @@ const services = [
     price: "4,928,000 GNF ($560)",
     rental: "8,800 GNF/hour ($1).",
     buttonText: "Buy or Rent for Your Team",
-    color: "text-green-500",
+    color: "text-[#15803D]",
   },
   {
     image: "/assets/asset13.png",
@@ -90,7 +90,7 @@ const services = [
     description:
       "Upskill your team with custom training tailored to your business needs.",
     buttonText: "Train Your Team",
-    color: "text-green-500",
+    color: "text-[#15803D]",
   },
 ];
 
@@ -112,7 +112,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="bg-[#262C3C] text-white w-[1920px] h-[1853px]">
+    <section className="bg-[#262C3C] text-white w-[1920px] h-[1953px] p-16">
       <div className="max-w-full">
         {/* Header */}
         <div className="text-center">
@@ -212,13 +212,14 @@ const ServicesSection = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-[#262C3C] border border-[#FFFFFF80] w-[570px] h-[229.58px] p-6 rounded-xl flex items-start gap-6"
+                className="bg-[#262C3C] border border-[#FFFFFF80] w-[570px] h-[229.58px] p-6 rounded-lg flex items-start gap-6"
               >
                   <div className="flex-shrink-0 w-[75px] h-[75px] left-[47px] top-[47px]">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-contain"
+                    style={{ fill: service.color }}
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-3">

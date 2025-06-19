@@ -7,7 +7,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 -ml-[60px] mt-[10px]">
             <div className="w-[94.87px] h-[78px] bg-white rounded-full flex items-center justify-center">
               <img
                 src={logo}
@@ -61,7 +61,7 @@ const Header = () => {
           </nav>
 
           {/* Right side buttons */}
-          <div className="flex items-center space-x-4 w-[379.69px] h-[51px] mt-[29.12px] ml-[150px]">
+          <div className="flex items-center space-x-4 w-[379.69px] h-[51px] mt-[39.12px] ml-[150px]">
             <button className="ml-[68ppx] mt-[0.44px] px-4 py-2 bg-[#3B82F6] text-white h-[51px] w-[114px] rounded-full hover:bg-blue-50 transition-colors font-bold font-inter text-[15px] leading-[21px] tracking-normal">
               Login
             </button>

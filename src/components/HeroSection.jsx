@@ -39,10 +39,29 @@ const HeroSection = () => {
   return (
     <section className="relative bg-gray-50 overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-30 left-20 w-20 h-20 bg-pink-200 rounded-full opacity-60"></div>
-      <div className="absolute top-32 right-32 w-4 h-4 bg-purple-500 rounded-full"></div>
-      <div className="absolute bottom-40 left-10 w-3 h-3 bg-blue-400 rounded-full"></div>
-      <div className="absolute bottom-40 right-20 w-4 h-4 bg-orange-400 rounded-full"></div>
+      <img
+        src="/assets/circle1.png"
+        alt=""
+        className="absolute top-[110px] left-[370px] w-[88px] h-[87px]"
+      />
+
+      <img
+        src="/assets/circle2.png"
+        alt=""
+        className="absolute top-[80px] right-[250px] w-[20px] h-[20px]"
+      />
+
+      <img
+        src="/assets/circle3.png"
+        alt=""
+        className="absolute top-[470px] left-[450px] w-[15px] h-[15px]"
+      />
+
+      <img
+        src="/assets/circle4.png"
+        alt=""
+        className="absolute top-[500px] right-[250px] w-[15px] h-[15px]"
+      />
 
       <div className="max-w-7xl mx-auto text-center relative">
         {/* Save 20% Badge */}
@@ -62,7 +81,7 @@ const HeroSection = () => {
             <span className="text-[#3B82F6] font-inter text-[73.71px] leading-[97.75px] -tracking-[1px]">
               <img
                 src={circle}
-                className="absolute z-50 h-[130px] w-[229px] -top-4 object-cover"
+                className="absolute z-50 h-[130px] w-[229px] -top-4 object-fill"
               />
               Hire.
             </span>

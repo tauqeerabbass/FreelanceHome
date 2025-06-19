@@ -6,7 +6,7 @@ import asset20 from "/assets/asset20.jpg";
 const PromotionSection = () => {
   return (
     <section
-      className="relative overflow-hidden"
+      className="relative top-[80px]"
       style={{
         width: "1920px",
         height: "442.97px",
@@ -16,63 +16,37 @@ const PromotionSection = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {/* Left side - Mobile phones */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              {/* iPhone */}
-              <div className="relative w-[339.34px] h-[660.57px] transform rotate-12 z-10">
-                <img
-                  src={asset2}
-                  alt="iPhone"
-                  className="absolute -top-20 left-0 w-[339.34px] h-[660.57px] object-contain rounded-3xl z-20"
-                />
-              </div>
+      {/* Floating iPhone */}
+      <img
+        src={asset2}
+        alt="iPhone"
+        className="absolute -top-[100px] left-[1.97px] w-[339.34px] h-[660.57px] object-contain rotate-[15deg] z-20"
+      />
 
-              {/* Samsung phone behind */}
-              <div className="absolute w-[743px] h-[743px] left-[33px] -top-[21px] w-44 h-96 transform z-10">
-                <img
-                  src={asset4}
-                  alt="Samsung Phone"
-                  className="w-full h-full object-contain rounded-3xl"
-                />
-              </div>
-            </div>
-          </div>
+      {/* Floating Samsung behind */}
+      <img
+        src={asset4}
+        alt="Samsung Phone"
+        className="absolute -top-[21px] left-[33px] w-[743px] h-[743px] object-contain rotate-[0deg] z-30"
+      />
 
-          {/* Center - Content */}
-          <div className="text-center text-white content-center">
-            <p className="relative font-inter text-[17.3px] leading-[25.2px] tracking-normal mt-[120px] ml-[250px] w-[164.68px] h-[18px]">
-              Ad
-            </p>
-            <h2 className="relative font-bold font-inter text-[40.2px] leading-[50.4px] tracking-[-2px] w-[570px] h-[100.78px] ml-[50px] mt-[15px]">
-              Get 20% Off Smartphones &<br />
-              Rentals – Visit Our Shop!
-            </h2>
-            <button className="relative w-[301px] h-[55px] font-inter text-[14.77px] leading-[21px] tracking-normal font-bold bg-transparent border-2 border-opacity-5 text-white rounded-full transition-colors mt-[30px] ml-[30px]">
-              Explore the Platform Now →
-            </button>
-          </div>
+      {/* Floating Tablet */}
+      <img
+        src={asset3}
+        alt="Tablet"
+        className="absolute -top-[178.03px] left-[1377px] w-[543px] h-[621px] object-contain rotate-[-0deg] z-20"
+      />
 
-          {/* Right side - Tablet/Dashboard */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="rounded-2xl transform rotate-12 shadow-2xl">
-                <div className="w-full h-full rounded-xl relative overflow-hidden">
-                  {/* Dashboard mockup */}
-                  <div className="flex items-center justify-between -top-[178.03px] left-[1377px]">
-                    <img
-                      src={asset3}
-                      alt="Logo"
-                      className="w-[543px] h-[621px]"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Center Content */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-30">
+        <p className="font-inter text-[17.3px] leading-[25.2px] mb-3">Ad</p>
+        <h2 className="font-bold font-inter text-[40.2px] leading-[50.4px] tracking-[-2px] mb-6">
+          Get 20% Off Smartphones &<br />
+          Rentals – Visit Our Shop!
+        </h2>
+        <button className="w-[301px] h-[55px] font-inter text-[14.77px] font-bold border-2 border-white border-opacity-50 rounded-full hover:bg-white hover:text-black transition-colors">
+          Explore the Platform Now →
+        </button>
       </div>
     </section>
   );

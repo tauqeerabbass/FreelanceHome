@@ -34,7 +34,7 @@ const products = [
 const ProductShowcase = () => {
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-blue-500 text-white px-[42px] py-2 rounded-full w-[170px] h-[33px] font-medium mb-6 font-inter text-[17.72px] leading-[25.2px] tracking-normal">
@@ -51,18 +51,18 @@ const ProductShowcase = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 justify-evenly">
           {products.map((product) => (
             <div
               key={product.id}
-              className="max-w-[506px] w-full bg-white border border-[#e0e0e0] rounded-[20px] shadow-md overflow-hidden flex flex-col mx-auto"
+              className="max-w-[506px] w-full bg-white rounded-[20px] shadow-md overflow-hidden flex flex-col mx-auto border-2 border-[#00000026] border-opacity-15"
             >
               {/* Product Image */}
               <div className="w-full h-[277px] overflow-hidden">
                 <img
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
-                  className="w-full h-[277px] object-cover rounded-t-[30px] top-[16px] left-[15px]"
+                  className="w-full h-[277px] object-cover rounded-t-[30px] top-[16px] left-[15px] p-3"
                 />
               </div>
 
@@ -100,7 +100,7 @@ const ProductShowcase = () => {
                       {product.salePrice}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2 mt-8">
+                  <div className="flex items-center gap-2 mt-[44px]">
                     <span className="text-[#FF00049C] line-through font-medium font-poppins text-[24px] leading-[13px] tracking-normal">
                       {product.originalUsd}
                     </span>
@@ -111,7 +111,7 @@ const ProductShowcase = () => {
                 </div>
 
                 {/* Add to Cart Button */}
-                <button className="relative z-50 bottom-10 left-40 w-[193px] h-[46px] bg-[#15803D] hover:bg-[#15803D] text-white font-poppins font-semibold text-[20px] leading-[26px] tracking-normal py-2 px-4 rounded-2xl transition">
+                <button className="relative z-50 bottom-9 left-[280px] w-[193px] h-[46px] bg-[#15803D] hover:bg-[#15803D] text-white font-poppins font-semibold text-[20px] leading-[26px] tracking-normal py-2 px-4 rounded-2xl transition">
                   Add to Cart
                 </button>
               </div>

@@ -35,14 +35,14 @@ const socialLinks = [
     link: "https://youtube.com",
   },
   {
-    icon: () => <FaLinkedinIn className="w-6 h-6" />,
-    label: "LinkedIn",
-    link: "https://linkedin.com",
-  },
-  {
     icon: () => <FaBehance className="w-6 h-6" />,
     label: "Behance",
     link: "https://behance.net",
+  },
+  {
+    icon: () => <FaLinkedinIn className="w-6 h-6" />,
+    label: "LinkedIn",
+    link: "https://linkedin.com",
   },
 ];
 
