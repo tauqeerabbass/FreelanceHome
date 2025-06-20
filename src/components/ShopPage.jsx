@@ -7,6 +7,7 @@ const ShopPage = () => {
     salePrice: "6,336,000 GNF",
     rentalPrice: "352,000",
     badges: ["New", "Best Selling"],
+    image: "/assets/asset10.jpg",
   }));
 
   return (
@@ -99,17 +100,17 @@ const ShopPage = () => {
           {/* Right - Content */}
           <div className="flex-1 max-w-lg">
             {/* Ad Badge */}
-            <div className="absolute left-[937px] bottom-[-40px] inline-block border rounded-2xl text-center border-[#3B82F6] w-[47px] h-[23px] text-white font-medium font-inter text-[17.3px] leading-[25.2px] tracking-normal">
+            <div className="relative -top-[70px] -left-[400px] inline-block border rounded-2xl text-center border-[#3B82F6] w-[47px] h-[23px] text-white font-medium font-inter text-[17.3px] leading-[25.2px] tracking-normal">
               Ad
             </div>
 
-            <h3 className="font-bold font-inter text-[45px] leading-[54.9px] tracking-normal w-[771px] h-[111px] absolute left-[897px] -bottom-[200px]">
+            <h3 className="relative -top-[40px] -left-[440px] font-bold font-inter text-[45px] leading-[54.9px] tracking-normal w-[771px] h-[111px]">
               Need IT Support? ? Explore Our
               <br />
               Tech Services!
             </h3>
 
-            <button className="h-[51px] w-[212px] justify-center absolute left-[897px] -bottom-[284px] bg-[#3B82F6] hover:bg-[#3B82F6] text-white rounded-full font-medium transition-colors flex items-center">
+            <button className="relative top-[10px] -left-[435px] h-[51px] w-[212px] justify-center bg-[#3B82F6] hover:bg-[#3B82F6] text-white rounded-full font-medium transition-colors flex items-center">
               Get IT Support →
             </button>
           </div>
@@ -122,122 +123,113 @@ const ShopPage = () => {
       </section>
 
       {/* Product Shopping Section */}
-      <section className="bg-white min-h-screen">
-        {/* Breadcrumb */}
-        <div className="px-8 py-4 border-b border-gray-100">
-          <div className="flex items-center text-sm text-gray-600 space-x-2">
-            <span className="text-blue-600 hover:underline cursor-pointer">
+      <div className="w-full bg-white min-h-screen">
+        {/* Breadcrumb and Category Tabs on same line */}
+        <div className="px-8 py-4 border-b border-gray-200 flex items-center justify-between">
+          {/* Breadcrumb - Left side */}
+          <div className="flex items-center space-x-2 w-[114px] h-[19px] relative top-[20px] left-[200px]">
+            <span className="font-normal font-satoshi text-[16px] leading-[100%] tracking-normal text-black text-opacity-60 hover:underline cursor-pointer">
               Home
             </span>
-            <span></span>
-            <span className="text-blue-600 hover:underline cursor-pointer">
+            <span className="mx-2 text-black text-opacity-60">{">"}</span>
+            <span className="text-[#3B82F6] hover:underline cursor-pointer font-normal font-inter text-[16px] leading-[100%] tracking-normal">
               Shop
             </span>
           </div>
-        </div>
 
-        {/* Category Tabs */}
-        <div className="border-b border-gray-200">
-          <div className="px-8">
-            <div className="flex space-x-8">
-              <button className="py-4 px-2 text-green-600 border-b-2 border-green-600 font-medium">
-                Smartphones
-              </button>
-              <button className="py-4 px-2 text-gray-600 hover:text-gray-900">
-                Laptops
-              </button>
-              <button className="py-4 px-2 text-gray-600 hover:text-gray-900">
-                Desktops
-              </button>
-              <button className="py-4 px-2 text-gray-600 hover:text-gray-900">
-                Tablets
-              </button>
-              <button className="py-4 px-2 text-gray-600 hover:text-gray-900">
-                Components
-              </button>
-            </div>
+          {/* Category Tabs - Center */}
+          <div className="flex space-x-8 w-[1400px] h-[40px] relative top-[15px] left-[250px]">
+            <button className="py-4 px-2 text-[#15803D] font-normal font-inter text-[16px] leading-[24px] tracking-normal">
+              Smartphones
+            </button>
+            <button className="py-4 px-2 font-normal font-inter text-[16px] leading-[24px] tracking-normal text-[#62646A]">
+              Laptops
+            </button>
+            <button className="py-4 px-2 font-normal font-inter text-[16px] leading-[24px] tracking-normal text-[#74767E]">
+              Desktops
+            </button>
+            <button className="py-4 px-2 font-normal font-inter text-[16px] leading-[24px] tracking-normal text-[#74767E]">
+              Accessories
+            </button>
+            <button className="py-4 px-2 font-normal font-inter text-[16px] leading-[24px] tracking-normal text-[#74767E]">
+              Components
+            </button>
           </div>
+
+          {/* Empty div for balance */}
+          <div className="w-32"></div>
         </div>
 
         <div className="px-8 py-8">
           <div className="flex gap-8">
             {/* Left Sidebar - Filters */}
-            <div className="w-72 flex-shrink-0">
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="font-semibold text-gray-900 mb-6 text-lg">
+            <div className="w-72 flex-shrink-0 relative top-[20px] left-[200px]">
+              <div className="bg-white border border-black border-opacity-10 rounded-2xl p-6 w-[295px] h-[519px]">
+                {/* Yellow Circle Icon */}
+                {/* <div className="flex justify-center mb-6">
+                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <span className="text-black font-bold text-lg">I</span>
+                </div>
+              </div> */}
+
+                <h3 className=" text-[#3B82F6] mb-6 font-bold font-satoshi text-[20px] leading-[100%] tracking-normal">
                   Filters
                 </h3>
 
-                {/* Yellow Circle Icon */}
-                <div className="flex justify-center mb-6">
-                  <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold">I</span>
-                  </div>
-                </div>
-
                 {/* Filter Sections */}
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {/* Expandable Filter Categories */}
                   <div className="space-y-3">
-                    <div className="flex items-center justify-between cursor-pointer">
-                      <span className="text-gray-700">Category</span>
+                    <div className="flex items-center justify-between cursor-pointer py-2 border-b border-gray-100">
+                      <span className="text-black text-opacity-60 font-normal font-inter text-[16px] leading-[100%] tracking-normal">
+                        Condition
+                      </span>
                       <span className="text-gray-400"></span>
                     </div>
-                    <div className="flex items-center justify-between cursor-pointer">
-                      <span className="text-gray-700">Brand</span>
+                    <div className="flex items-center justify-between cursor-pointer py-2 border-b border-gray-100">
+                      <span className="text-black text-opacity-60 font-normal font-inter text-[16px] leading-[100%] tracking-normal">
+                        Category
+                      </span>
                       <span className="text-gray-400"></span>
                     </div>
-                    <div className="flex items-center justify-between cursor-pointer">
-                      <span className="text-gray-700">Storage</span>
+                    <div className="flex items-center justify-between cursor-pointer py-2 border-b border-gray-100">
+                      <span className="text-black text-opacity-60 font-normal font-inter text-[16px] leading-[100%] tracking-normal">
+                        Brand
+                      </span>
                       <span className="text-gray-400"></span>
                     </div>
-                  </div>
-
-                  {/* Ratings */}
-                  <div>
-                    <h4 className="font-medium text-gray-700 mb-3">Ratings</h4>
-                    <div className="space-y-2">
-                      {[5, 4, 3, 2, 1].map((rating) => (
-                        <label
-                          key={rating}
-                          className="flex items-center cursor-pointer"
-                        >
-                          <input type="checkbox" className="mr-3 w-4 h-4" />
-                          <div className="flex items-center">
-                            {Array.from({ length: 5 }, (_, i) => (
-                              <span
-                                key={i}
-                                className={`text-sm ${
-                                  i < rating
-                                    ? "text-yellow-400"
-                                    : "text-gray-300"
-                                }`}
-                              >
-                                ★
-                              </span>
-                            ))}
-                          </div>
-                        </label>
-                      ))}
+                    <div className="flex items-center justify-between cursor-pointer py-2 border-b border-gray-100">
+                      <span className="text-black text-opacity-60 font-normal font-inter text-[16px] leading-[100%] tracking-normal">
+                        Availability
+                      </span>
+                      <span className="text-gray-400"></span>
+                    </div>
+                    <div className="flex items-center justify-between cursor-pointer py-2 border-b border-gray-100">
+                      <span className="text-black text-opacity-60 font-normal font-inter text-[16px] leading-[100%] tracking-normal">
+                        Ratings
+                      </span>
+                      <span className="text-gray-400"></span>
                     </div>
                   </div>
 
                   {/* Price Range */}
-                  <div>
-                    <h4 className="font-medium text-gray-700 mb-3">Price</h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-600">$50</span>
-                        <span className="text-gray-600">$800</span>
+                  <div className="mt-6">
+                    <h4 className="text-[#3B82F6] font-bold font-satoshi text-[20px] leading-[100%] tracking-normal mb-4">
+                      Price
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="text-[#3B82F6] flex items-center justify-between font-medium font-satoshi text-[14px] leading-[100%] tracking-normal">
+                        <span>$50</span>
+                        <span>$200</span>
                       </div>
                       <div className="relative">
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div className="bg-blue-600 h-2 rounded-full w-3/4 relative">
-                            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow"></div>
+                          <div className="bg-[#3B82F6] h-2 rounded-full w-3/4 relative">
+                            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-[#3B82F6] rounded-full border-2 border-white shadow"></div>
                           </div>
                         </div>
                       </div>
-                      <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors">
+                      <button className="w-[247px] h-[48px] bg-[#3B82F6] hover:bg-[#3B82F6] text-white py-2 px-4 rounded-[62px] font-medium font-satoshi text-[14px] leading-[100%] tracking-normal transition-colors">
                         Apply Filter
                       </button>
                     </div>
@@ -247,19 +239,21 @@ const ShopPage = () => {
             </div>
 
             {/* Main Content */}
-            <div className="flex-1">
+            <div className="flex-1 relative top-[10px] left-[170px]">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="font-bold font-inter text-[32px] leading-[100%] tracking-normal text-black">
                   Smartphones
                 </h2>
-                <div className="flex items-center space-x-6">
-                  <span className="text-gray-600 text-sm">
+                <div className="flex items-center w-[396px] h-[16px] ">
+                  <span className="text-[#00000099] text-opacity-60 font-normal font-satoshi text-[16px] leading-[100%] tracking-normal">
                     Showing 1-10 of 100 Products
                   </span>
                   <div className="flex items-center space-x-2">
-                    <span className="text-gray-600 text-sm">Sort by:</span>
-                    <select className="border border-gray-300 rounded px-3 py-1 text-sm bg-white">
+                    <span className="text-black text-opacity-60 font-normal font-satoshi text-[16px] leading-[100%] tracking-normal">
+                      Sort by:
+                    </span>
+                    <select className="rounded px-3 py-1 font-medium font-satoshi text-[16px] leading-[100%] tracking-normal bg-white">
                       <option>Most Popular</option>
                       <option>Price: Low to High</option>
                       <option>Price: High to Low</option>
@@ -269,51 +263,37 @@ const ShopPage = () => {
                 </div>
               </div>
 
-              {/* Product Grid - 2 columns, 5 rows */}
-              <div className="grid grid-cols-2 gap-6">
+              {/* Product Grid - 2 columns */}
+              <div className="flex flex-wrap gap-6">
                 {products.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-2xl p-6 relative shadow-sm"
+                    className="w-[536px] h-[540px] bg-white rounded-3xl relative shadow-sm border-2 border-black border-opacity-15"
                   >
-                    {/* User Avatar with Yellow Circle */}
-                    <div className="absolute top-4 right-4 flex items-center">
-                      <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center mr-2">
-                        <img
-                          src="" // Add user avatar image source here
-                          alt="User"
-                          className="w-6 h-6 rounded-full object-cover"
-                        />
-                      </div>
-                      <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                        <span className="text-black text-xs font-bold">I</span>
-                      </div>
-                    </div>
-
                     {/* Product Image */}
                     <div className="flex justify-center mb-6 mt-4">
                       <img
-                        src="" // Add iPhone image source here
+                        src={product.image}
                         alt={product.name}
-                        className="w-32 h-40 object-contain"
+                        className="w-[506px] rounded-t-3xl h-[277px] object-contain"
                       />
                     </div>
 
                     {/* Product Info */}
                     <div className="text-center">
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      <h3 className="relative -left-[160px] font-medium font-poppins text-[36px] leading-[34px] tracking-normal text-black mb-3">
                         {product.name}
                       </h3>
 
                       {/* Badges */}
-                      <div className="flex justify-center space-x-2 mb-4">
+                      <div className="relative -left-[120px] flex justify-center flex-wrap gap-2 mb-4">
                         {product.badges.map((badge, index) => (
                           <span
                             key={index}
-                            className={`px-3 py-1 rounded-full text-xs font-medium ${
+                            className={`px-3 py-1 rounded-lg border border-black border-opacity-15 font-normal font-poppins text-[18px] leading-[19.5px] tracking-normal ${
                               badge === "New"
-                                ? "bg-blue-100 text-blue-800"
-                                : "bg-green-100 text-green-800"
+                                ? "bg-white text-[#0F3D3E99] text-opacity-60 w-[93px] h-[42px]"
+                                : "bg-white text-[#0F3D3E99] text-opacity-60 w-[146px] h-[42px]"
                             }`}
                           >
                             {badge}
@@ -323,33 +303,39 @@ const ShopPage = () => {
 
                       {/* Pricing */}
                       <div className="mb-4">
-                        <div className="flex items-center justify-center space-x-2 mb-1">
-                          <span className="text-gray-600 line-through text-sm">
+                        <div className="relative -left-[50px] top-[10px] flex items-center justify-center space-x-2 mb-1">
+                          <span className="text-black text-opacity-45 line-through font-medium font-poppins text-[24px] leading-[13px] tracking-normal">
                             {product.originalPrice}
                           </span>
-                          <span className="text-xl font-bold text-gray-900">
+                          <span className="font-medium font-poppins text-[32px] leading-[13px] tracking-normal text-black">
                             {product.salePrice}
                           </span>
                         </div>
-                        <div className="text-sm text-gray-700">
-                          <span className="font-medium">Rent:</span>{" "}
+                        <div className="relative -left-[120px] top-[45px] font-medium font-poppins text-[32px] leading-[13px] tracking-normal text-black">
+                          <span className="font-normal font-poppins text-[18px] leading-[19.5px] tracking-normal text-[#0F3D3E99] text-opacity-60">
+                            Rent:
+                          </span>{" "}
                           {product.rentalPrice}{" "}
-                          <span className="text-gray-600">/month</span>
+                          <span className="text-[#0F3D3E99] text-opacity-60 font-normal font-poppins text-[18px] leading-[19.5px] tracking-normal">
+                            /month
+                          </span>
                         </div>
                       </div>
 
                       {/* Add to Cart Button */}
-                      <button className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+                      <button className="relative left-[150px] -top-[10px] w-[193px] h-[46px] bg-[#15803D] hover:bg-[#15803D] text-white py-3 px-4 rounded-2xl transition-colors font-semibold font-poppins text-[20px] leading-[26px] tracking-normal">
                         Add to Cart
                       </button>
                     </div>
                   </div>
                 ))}
               </div>
+
+              {/* Pagination could be added here */}
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

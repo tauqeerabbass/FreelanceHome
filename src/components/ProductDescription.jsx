@@ -15,7 +15,7 @@ const ProductDescription = () => {
         <div className="space-y-8">
           {/* Product Title */}
           <div>
-            <h1 className="font-bold font-inter text-[32px] tracking-normal text-black leading-[100%] mb-1">
+            <h1 className="font-bold font-inter text-[32px] tracking-normal text-black leading-[100%]">
               iPhone 14
             </h1>
             <p className="text-black font-normal font-inter text-[16px] tracking-normal leading-[100%] mt-2">
@@ -25,7 +25,7 @@ const ProductDescription = () => {
 
           {/* Specifications */}
           <div>
-            <h2 className="font-bold font-inter text-[28px] leading-[100%] tracking-normal text-gray-900 mb-4">
+            <h2 className="font-bold font-inter text-[28px] leading-[100%] tracking-normal text-gray-900 mb-5">
               Specifications
             </h2>
 

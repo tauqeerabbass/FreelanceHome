@@ -2,20 +2,20 @@ const Invoice = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 bg-white mb-10">
       {/* Breadcrumb */}
-      <nav className="mb-6">
-        <span className="font-normal font-Satoshi text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
+      <nav className="mb-6 mt-4 w-[360px] h-[19px]">
+        <span className="font-normal font-Inter text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
           Home
         </span>
         <span className="mx-2">{">"}</span>
-        <span className="font-normal font-Satoshi text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
+        <span className="font-normal font-Inter text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
           Cart
         </span>
         <span className="mx-2">{">"}</span>
-        <span className="font-normal font-Satoshi text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
+        <span className="font-normal font-Inter text-[16px] leading-[100%] tracking-normal text-black text-opacity-60">
           Details
         </span>
         <span className="mx-2">{">"}</span>
-        <span className="font-normal font-Satoshi text-[16px] leading-[100%] tracking-normal text-black">
+        <span className="font-normal font-Inter text-[16px] leading-[100%] tracking-normal text-black">
           Download Invoice
         </span>
       </nav>
@@ -27,20 +27,20 @@ const Invoice = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column - Invoice */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 w-[885px] h-[1106px]">
           <div className="bg-white">
-            <h2 className="font-bold font-inter text-[24px] leading-[100%] tracking-normal text-black mb-6">Invoice</h2>
+            <h2 className="font-bold font-inter text-[24px] leading-[20px] tracking-normal text-black mb-6 relative top-[25.55px] left-[39px]">Invoice</h2>
 
             {/* Invoice Image */}
-            <div className="border border-gray-200 rounded-lg p-4 mb-6">
-              <img src="/assets/asset25.png" alt="Invoice Document" className="w-full h-auto object-contain" />
+            <div className="rounded-lg p-4 mb-6 w-[803px] h-[943px] top-[69px] left-[41px]">
+              <img src="/assets/asset25.png" alt="Invoice Document" className="border border-black mt-3 w-full h-auto object-contain" />
             </div>
 
             {/* Download Link */}
             <div className="text-center">
               <a
                 href="#"
-                className="font-normal font-Satoshi text-[16px] leading-[100%] tracking-normal text-[#007BFF] hover:underline"
+                className="font-semibold font-Sans text-[20px] leading-[20px] tracking-normal text-[#3B82F6] hover:underline relative -left-[46px]"
               >
                 Click Here to Download
               </a>
@@ -50,7 +50,7 @@ const Invoice = () => {
 
         {/* Right Column - Order Summary */}
         <div className="lg:col-span-1 w-[505px] h-[387px] ml-5">
-          <div className="bg-gray-50 p-6 rounded-lg">
+          <div className="bg-gray-50 p-6 rounded-lg -mt-[10px]">
             <h2 className="font-bold font-Satoshi text-[24px] leading-[100%] tracking-normal text-black mb-8 mt-3">
               Order Summary
             </h2>

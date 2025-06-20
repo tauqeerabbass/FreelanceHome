@@ -13,9 +13,9 @@ const Cart = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column - Cart Items */}
-        <div className="lg:col-span-2 space-y-4">
+        <div className="lg:col-span-2 space-y-11">
           {/* Cart Item 1 */}
-          <div className="h-[124px] flex items-center gap-4 p-4 border border-gray-200 rounded-lg mb-[60px] mt-6">
+          <div className="h-[124px] flex items-center gap-4 p-4 border border-gray-200 rounded-lg mt-6">
             <img src="/assets/asset10.jpg" alt="iPhone 14" className="w-32 h-32 object-cover rounded-lg bg-gray-100" />
             <div className="flex-1">
               <h3 className="font-normal font-inter text-[20px] leading-[100%] tracking-normal text-black mb-1 ">iPhone 14</h3>
@@ -77,7 +77,7 @@ const Cart = () => {
           </div>
 
           {/* Cart Item 3 */}
-          <div className="h-[124px] flex items-center gap-4 p-4 border border-gray-200 rounded-lg mt-10">
+          <div className="h-[124px] flex items-center gap-4 p-4 border border-gray-200 rounded-lg">
             <img src="/assets/asset10.jpg" alt="iPhone 14" className="w-32 h-32 object-cover rounded-lg bg-gray-100" />
             <div className="flex-1">
               <h3 className="font-normal font-inter text-[20px] leading-[100%] tracking-normal text-black mb-1 ">iPhone 14</h3>
