@@ -11,7 +11,7 @@ const ShopPage = () => {
   }));
 
   return (
-    <div className="w-[1920px]">
+    <div className="w-[1920px] mb-[100px]">
       {/* Top Section - Light Background */}
       <section
         className="relative bg-gray-100 overflow-hidden"
@@ -138,7 +138,7 @@ const ShopPage = () => {
           </div>
 
           {/* Category Tabs - Center */}
-          <div className="flex space-x-8 w-[1400px] h-[40px] relative top-[15px] left-[250px]">
+          <div className="flex space-x-8 w-[1400px] h-[40px] relative top-[15px] left-[300px]">
             <button className="py-4 px-2 text-[#15803D] font-normal font-inter text-[16px] leading-[24px] tracking-normal">
               Smartphones
             </button>
@@ -239,13 +239,13 @@ const ShopPage = () => {
             </div>
 
             {/* Main Content */}
-            <div className="flex-1 relative top-[10px] left-[170px]">
+            <div className="flex-1 relative top-[10px] left-[220px]">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <h2 className="font-bold font-inter text-[32px] leading-[100%] tracking-normal text-black">
                   Smartphones
                 </h2>
-                <div className="flex items-center w-[396px] h-[16px] ">
+                <div className="relative right-[420px] flex items-center gap-5 w-[496px] h-[16px] ">
                   <span className="text-[#00000099] text-opacity-60 font-normal font-satoshi text-[16px] leading-[100%] tracking-normal">
                     Showing 1-10 of 100 Products
                   </span>
